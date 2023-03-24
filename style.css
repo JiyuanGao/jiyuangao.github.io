@@ -15,6 +15,7 @@ body {
   line-height: 1.5;
   color: #333;
   background-color: #f9f9f9;
+  margin: 50px;
 }
 
 a {
@@ -154,3 +155,19 @@ footer {
 }
 
 .footer-social a:hover
+
+/* Table of contents */
+.toc {
+  position: fixed;
+  top: 80px;
+  right: 50px;
+  width: 200px;
+  font-size: 14px;
+}
+
+/* Page title */
+.title {
+  text-align: center;
+  font-size: 36px;
+  margin-top: 0;
+}
