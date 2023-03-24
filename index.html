@@ -3,57 +3,70 @@
 <head>
 	<meta charset="UTF-8">
 	<title>John Doe - Academic Website</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<header>
-		<h1>John Doe</h1>
-		<nav>
-			<ul>
-				<li><a href="#about">About</a></li>
-				<li><a href="#research">Research</a></li>
-				<li><a href="#publication">Publications</a></li>
-				<li><a href="#teaching">Teaching</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
+		<div class="container">
+			<nav>
+				<h1 class="logo">John Doe</h1>
+				<ul class="menu">
+					<li><a href="#about">About</a></li>
+					<li><a href="#research">Research</a></li>
+					<li><a href="#publications">Publications</a></li>
+					<li><a href="#teaching">Teaching</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 	<main>
+		<section id="hero">
+			<div class="container">
+				<h2>Hi, I'm John Doe</h2>
+				<p class="subtitle">Postdoctoral Researcher | Department of Computer Science | XYZ University</p>
+			</div>
+		</section>
 		<section id="about">
-			<h2>About Me</h2>
-			<p>I am a postdoctoral researcher in the Department of Computer Science at XYZ University. My research interests include artificial intelligence, machine learning, and data mining.</p>
+			<div class="container">
+				<h2>About Me</h2>
+				<p>I am a postdoctoral researcher in the Department of Computer Science at XYZ University. My research interests include artificial intelligence, machine learning, and data mining.</p>
+			</div>
 		</section>
 		<section id="research">
-			<h2>Research Interests</h2>
-			<ul>
-				<li>Artificial intelligence</li>
-				<li>Machine learning</li>
-				<li>Data mining</li>
-			</ul>
+			<div class="container">
+				<h2>Research Interests</h2>
+				<ul>
+					<li>Artificial intelligence</li>
+					<li>Machine learning</li>
+					<li>Data mining</li>
+				</ul>
+			</div>
 		</section>
-		<section id="publication">
-			<h2>Selected Publications</h2>
-			<ul>
-				<li>Doe, J. et al. "A Deep Learning Approach for Image Recognition." IEEE Transactions on Pattern Analysis and Machine Intelligence (2019).</li>
-				<li>Doe, J. et al. "Mining Frequent Subgraphs from Graph Databases." Data Mining and Knowledge Discovery (2018).</li>
-			</ul>
+		<section id="publications">
+			<div class="container">
+				<h2>Selected Publications</h2>
+				<ul>
+					<li>Doe, J. et al. "A Deep Learning Approach for Image Recognition." IEEE Transactions on Pattern Analysis and Machine Intelligence (2019).</li>
+					<li>Doe, J. et al. "Mining Frequent Subgraphs from Graph Databases." Data Mining and Knowledge Discovery (2018).</li>
+				</ul>
+			</div>
 		</section>
 		<section id="teaching">
-			<h2>Teaching</h2>
-			<ul>
-				<li>Introduction to Machine Learning (graduate course)</li>
-				<li>Introduction to Data Mining (undergraduate course)</li>
-			</ul>
+			<div class="container">
+				<h2>Teaching</h2>
+				<ul>
+					<li>Introduction to Machine Learning (graduate course)</li>
+					<li>Introduction to Data Mining (undergraduate course)</li>
+				</ul>
+			</div>
 		</section>
 		<section id="contact">
-			<h2>Contact Me</h2>
-			<p>Email: john.doe@xyz.edu</p>
-			<p>Twitter: @johndoe</p>
-		</section>
-	</main>
-	<footer>
-		<p>&copy; 2023 John Doe</p>
-	</footer>
-</body>
-</html>
+			<div class="container">
+				<h2>Contact Me</h2>
+				<ul class="social-links">
+					<li><a href="https://twitter.com/johndoe" target="_blank"><i class="fab fa-twitter"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/johndoe" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+					<li><a href="https://github.com/johndoe" target="_
