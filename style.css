@@ -1,210 +1,197 @@
 /* 全局样式 */
 body {
     font-family: 'Montserrat', sans-serif;
-    /* 使用 Montserrat 字体 */
     font-size: 16px;
-    /* 设置基础字体大小 */
     color: #333;
-    /* 设置文本颜色 */
     background-color: #fff;
-    /* 设置背景颜色 */
     margin: 0;
-    /* 取消默认的外边距 */
     padding: 0;
-    /* 取消默认的内边距 */
     line-height: 1.6;
-    /* 设置行高 */
 }
 
 /* 链接样式 */
 a {
     color: #071523;
-    /* 设置链接的默认颜色 */
     text-decoration: none;
-    /* 移除默认的下划线 */
 }
 
 a:hover {
     color: #3a91cb;
-    /* 鼠标悬停时改变颜色 */
 }
 
 /* 页眉样式 */
 header {
     background-color: #023b74;
-    /* 设置页眉背景颜色 */
     color: #ffffff;
-    /* 设置页眉文本颜色 */
     padding: 10px 0;
-    /* 设置页眉上下内边距 */
 }
 
 /* 页面容器，控制整体布局宽度和居中 */
 .container {
     max-width: 800px;
-    /* 设置内容的最大宽度 */
     margin: 0 auto;
-    /* 使内容居中对齐 */
     padding: 0;
-    /* 增加左右内边距，提供额外留白 */
 }
-
 
 /* 页眉中的 Logo 样式 */
 .logo {
     text-align: center;
-    /* 居中对齐 */
     font-size: 36px;
-    /* 设置字体大小 */
     margin: 0;
-    /* 取消默认外边距 */
 }
 
 /* 导航菜单样式 */
 .menu {
     display: flex;
-    /* 使用 Flexbox 布局 */
     justify-content: center;
-    /* 居中对齐 */
     list-style: none;
-    /* 移除列表样式 */
     padding: 0;
-    /* 取消默认内边距 */
     margin: 20px 0 0;
-    /* 设置顶部外边距 */
 }
 
 .menu li {
-    margin: 0 50px;
-    /* 设置菜单项的水平间距 */
+    margin: 0 15px;
+    /* 减少菜单项的水平间距 */
 }
 
 .menu a {
     color: #fff;
-    /* 设置链接颜色 */
     font-size: 18px;
-    /* 设置字体大小 */
     font-weight: bold;
-    /* 加粗字体 */
 }
 
 /* 关于部分的整体样式 */
 .about-section {
-    padding: 60px 0px;
-    /* width: 80%; */
-    /* 减小页面内容宽度，增加左右留白 */
+    padding: 60px 0;
     max-width: 800px;
-    /* 设置内容的最大宽度 */
     margin: 0 auto;
-    /* 使内容居中对齐 */
-
 }
 
 /* 个人信息部分的网格布局 */
 .profile-container {
     display: grid;
-    /* 使用 Grid 布局 */
-    grid-template-columns: 1.2fr 1fr 1.5fr;
-    /* 定义三列布局比例 */
+    grid-template-columns: 1fr;
     gap: 10px;
-    /* 设置列之间的间距 */
     justify-items: center;
-    /* 内容水平居中 */
     align-items: start;
-    /* 内容垂直顶部对齐 */
     margin-bottom: 40px;
-    /* 设置底部外边距 */
 }
 
 /* 个人照片样式 */
 .profile-image img {
     border-radius: 10px;
-    /* 圆角效果 */
     max-width: 100%;
-    /* 限制最大宽度 */
     width: 180px;
-    /* 设置图片的宽度 */
     height: auto;
-    /* 自动调整高度以保持比例 */
     border: 2px solid #ddd;
-    /* 添加边框 */
 }
 
 /* 个人信息和研究兴趣的样式 */
 .profile-info,
 .research-interest {
     max-width: 700px;
-    /* 设置最大宽度 */
     text-align: left;
-    /* 左对齐文本 */
     padding: 15px;
-    /* 添加内边距以增加视觉空间 */
 }
 
 /* 信息和兴趣部分的标题样式 */
 .profile-info h2,
 .research-interest h2 {
     margin-top: 0;
-    /* 取消顶部外边距 */
     font-size: 20px;
-    /* 设置字体大小 */
     color: #2c3e50;
-    /* 设置文本颜色 */
 }
 
 /* 研究社区列表的样式 */
 .research-communities {
     display: flex;
-    /* 使用 Flexbox 布局 */
-    justify-content: flex-start;
-    /* 左对齐列表项 */
+    flex-wrap: wrap;
+    /* 允许换行 */
+    justify-content: center;
+    /* 中心对齐列表项 */
     padding: 0;
-    /* 取消默认内边距 */
     margin: 10px 0;
-    /* 设置垂直外边距 */
     list-style: none;
-    /* 移除列表样式 */
 }
 
 .research-communities li {
-    margin: 0 15px;
-    /* 设置列表项的左右间距 */
+    margin: 5px 10px;
+    /* 减少列表项的左右间距 */
 }
 
 /* 关于部分的描述文本样式 */
 .about-description {
-    margin-top: 0px;
-    /* 设置顶部外边距 */
+    margin-top: 0;
     text-align: center;
-    /* 居中对齐文本 */
     max-width: 800px;
-    /* 设置最大宽度 */
     padding: 0 15px;
-    /* 添加左右内边距 */
 }
 
 /* 各部分的标题样式 */
 section h2 {
     font-size: 28px;
-    /* 设置字体大小 */
     margin-bottom: 29px;
-    /* 设置底部外边距 */
     color: #2c3e50;
-    /* 设置文本颜色 */
 }
 
 /* 页脚样式 */
 footer {
     background-color: #f8f8f8;
-    /* 设置页脚背景颜色 */
     padding: 10px 0;
-    /* 调整上下内边距 */
     text-align: center;
-    /* 居中对齐文本 */
     border-top: 1px solid #ddd;
-    /* 添加顶部边框 */
     color: #777;
-    /* 设置文本颜色 */
     margin-top: 60px;
-    /* 设置顶部外边距 */
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 28px;
+        /* 调整手机端的字体大小 */
+    }
+
+    .menu {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .profile-container {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-image img {
+        width: 150px;
+        /* 调整个人照片的宽度 */
+    }
+
+    .profile-info,
+    .research-interest {
+        padding: 10px;
+    }
+
+    section h2 {
+        font-size: 24px;
+        /* 调整标题的字体大小 */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+        /* 减小字体大小以适应小屏幕 */
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .profile-image img {
+        width: 120px;
+        /* 进一步调整照片的宽度 */
+    }
 }
