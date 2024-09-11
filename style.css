@@ -11,12 +11,45 @@ body {
 
 /* 链接样式 */
 a {
-    color: #071523;
+    color: #0056b3;
+    /* 比正文稍暗的蓝色 */
     text-decoration: none;
+    /* 去掉默认下划线 */
+    font-weight: 500;
+    /* 略微加粗 */
+    border-bottom: 1px dotted rgba(0, 86, 179, 0.5);
+    /* 使用虚线下划线的效果 */
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+    /* 平滑过渡效果 */
 }
 
 a:hover {
-    color: #3a91cb;
+    color: #ff6347;
+    /* 悬停时颜色变化 */
+    border-bottom-color: #ff6347;
+    /* 悬停时下划线颜色变化 */
+}
+
+
+/* 邮箱链接样式 */
+a[href^="mailto:"] {
+    color: #0056b3;
+    /* 比正文稍暗的蓝色 */
+    text-decoration: none;
+    /* 去掉默认下划线 */
+    font-weight: 500;
+    /* 略微加粗 */
+    border-bottom: 1px dotted rgba(0, 86, 179, 0.5);
+    /* 使用虚线下划线的效果 */
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+    /* 平滑过渡效果 */
+}
+
+a[href^="mailto:"]:hover {
+    color: #ff6347;
+    /* 悬停时颜色变化 */
+    border-bottom-color: #ff6347;
+    /* 悬停时下划线颜色变化 */
 }
 
 /* 页眉样式 */
@@ -30,7 +63,8 @@ header {
 .container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 15px;
+    /* 增加左右内边距，避免内容贴边 */
 }
 
 /* 页眉中的 Logo 样式 */
@@ -40,34 +74,31 @@ header {
     margin: 0;
 }
 
+
 /* 导航菜单样式 */
 .menu {
     display: flex;
-    flex-wrap: nowrap;
-    /* 确保菜单项不会换行 */
+    flex-wrap: wrap;
+    /* 允许换行 */
     justify-content: center;
-    /* 居中对齐菜单项 */
     list-style: none;
-    /* 移除列表样式 */
     padding: 0;
-    /* 取消默认内边距 */
     margin: 20px 0 0;
-    /* 设置顶部外边距 */
 }
 
 .menu li {
-    margin: 0 15px;
-    /* 设置菜单项的水平间距 */
+    margin: 10px 15px;
+    /* 调整间距，让项目在小屏幕上更有空间 */
 }
 
 .menu a {
     color: #fff;
-    /* 设置链接颜色 */
     font-size: 18px;
-    /* 设置字体大小 */
     font-weight: bold;
-    /* 加粗字体 */
+    white-space: nowrap;
+    /* 防止文本换行 */
 }
+
 
 /* 关于部分的整体样式 */
 .about-section {
@@ -149,72 +180,42 @@ footer {
     margin-top: 60px;
 }
 
-/* 响应式设计部分 */
+/* 媒体查询：移动端样式 */
+@media (max-width: 700px) {
+    .container {
+        padding: 0 20px;
+        /* 增加内边距 */
+    }
 
-/* 移动端样式 */
-@media (max-width: 768px) {
     .menu {
-        display: flex;
-        flex-wrap: nowrap;
-        /* 确保菜单项不会换行 */
-        justify-content: center;
-        /* 居中对齐菜单项 */
-        list-style: none;
-        /* 移除列表样式 */
-        padding: 0;
-        /* 取消默认内边距 */
-        margin: 20px 0 0;
-        /* 设置顶部外边距 */
+        flex-direction: column;
+        /* 垂直显示菜单 */
+        align-items: center;
+        /* 居中对齐 */
     }
 
     .menu li {
-        margin: 0 15px;
-        /* 设置菜单项的水平间距 */
-    }
-
-    .menu a {
-        color: #fff;
-        /* 设置链接颜色 */
-        font-size: 18px;
-        /* 设置字体大小 */
-        font-weight: bold;
-        /* 加粗字体 */
+        margin: 10px 0;
+        /* 设置垂直间距 */
     }
 
     .profile-container {
         grid-template-columns: 1fr;
+        /* 单列布局 */
         gap: 20px;
+        /* 增加元素间距 */
     }
 
     .profile-image img {
         width: 150px;
+        /* 调整图片宽度 */
     }
 
-    section h2 {
-        font-size: 24px;
-    }
-
-    .about-section,
-    .container {
-        padding: 0 15px;
-    }
-}
-
-/* 小型设备样式（手机） */
-@media (max-width: 375px) {
-    .logo {
-        font-size: 24px;
-    }
-
-    .menu li {
-        margin: 5px 0;
-    }
-
-    .profile-image img {
-        width: 120px;
-    }
-
-    section h2 {
-        font-size: 20px;
+    .profile-info,
+    .research-interest {
+        padding: 0;
+        /* 去除额外内边距 */
+        text-align: center;
+        /* 居中对齐文本 */
     }
 }
